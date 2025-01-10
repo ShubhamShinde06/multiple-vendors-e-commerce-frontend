@@ -9,6 +9,10 @@ body{
   font-style: normal;
 }
 
+.hide-scoll::-webkit-scrollbar{
+  display: none;
+}
+
 .font-one {
   font-family: "DM Serif Text", serif;
   font-style: normal;

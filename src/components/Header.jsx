@@ -15,18 +15,28 @@ const Header = () => {
 
   return (
     <header
-      className={`w-full h-[90px] p-5 lg:px-[150px] fixed top-0 left-0 ${
+      className={`w-full h-[90px] p-5 lg:px-[100px] xl:px-[150px] fixed top-0 z-10 ${
         sticky ? `dark-nav shadow-xl` : ""
       }`}
     >
       <div className="w-full h-full flex items-center justify-between">
         <img src={logo} alt="" className="" />
         <ul className=" lg:flex text-[18px] gap-8 items-center text-black hidden font-[500]">
-          <NavLink to={'/'} className="">Home</NavLink>
-          <NavLink to={'/about'}  className="">About</NavLink>
-          <NavLink to={'/shop'}  className="">Shop</NavLink>
-          <NavLink to={'/pages'}  className="">Pages</NavLink>
-          <NavLink to={'/contact'}  className="">Contact</NavLink>
+          <NavLink to={"/"} className="">
+            Home
+          </NavLink>
+          <NavLink to={"/about"} className="">
+            About
+          </NavLink>
+          <NavLink to={"/shop"} className="">
+            Shop
+          </NavLink>
+          <NavLink to={"/pages"} className="">
+            Pages
+          </NavLink>
+          <NavLink to={"/contact"} className="">
+            Contact
+          </NavLink>
         </ul>
         <div className=" flex gap-5 items-center">
           <CgProfile className="w-7 h-7" />
